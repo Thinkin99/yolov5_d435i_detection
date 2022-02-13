@@ -25,11 +25,11 @@ pip install pyrealsense2
 
 - Colorimage:
 
-![image-20220213144406079](D:\Desktop\yolov5_d435i_detection\image\image-20220213144406079.png)
+![image-20220213144406079](https://github.com/Thinkin99/yolov5_d435i_detection/blob/main/image/image-20220213144406079.png)
 
 - Colorimage and depthimage:
 
-![image-20220213143921695](D:\Desktop\yolov5_d435i_detection\image\image-20220213143921695.png)
+![image-20220213143921695](https://github.com/Thinkin99/yolov5_d435i_detection/blob/main/image/image-20220213143921695.png)
 
 # 3.Model config：
 
