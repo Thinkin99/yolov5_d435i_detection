@@ -1,0 +1,2 @@
+# yolov5_d435i_detection
+使用realsense d435i相机，基于pytorch实现yolov5目标检测，返回检测目标相机坐标系下的位置信息。
