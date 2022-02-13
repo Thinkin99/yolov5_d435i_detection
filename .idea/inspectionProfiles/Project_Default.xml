@@ -1,0 +1,28 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="InconsistentLineSeparators" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="LongLine" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ProblematicWhitespace" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="11">
+            <item index="0" class="java.lang.String" itemvalue="tqdm" />
+            <item index="1" class="java.lang.String" itemvalue="pandas" />
+            <item index="2" class="java.lang.String" itemvalue="scipy" />
+            <item index="3" class="java.lang.String" itemvalue="tensorboard" />
+            <item index="4" class="java.lang.String" itemvalue="seaborn" />
+            <item index="5" class="java.lang.String" itemvalue="thop" />
+            <item index="6" class="java.lang.String" itemvalue="opencv-python" />
+            <item index="7" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="8" class="java.lang.String" itemvalue="matplotlib" />
+            <item index="9" class="java.lang.String" itemvalue="pycocotools" />
+            <item index="10" class="java.lang.String" itemvalue="Pillow" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="TodoComment" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>
