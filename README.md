@@ -33,7 +33,7 @@ pip install pyrealsense2
 
 # 3.Model config：
 
-修改模型配置文件
+修改模型配置文件，这里以yolov5s模型为例。也可以使用自己训练的权重模型。
 
 ```yaml
 weight:  "weights/yolov5s.pt"
