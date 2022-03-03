@@ -69,8 +69,24 @@ device: '0'
 config.enable_stream(rs.stream.depth, 1280, 720, rs.format.z16, 30)
 config.enable_stream(rs.stream.color, 1280, 720, rs.format.bgr8, 30)
 ```
-
-# 5.Reference:
+# 5.code return xyz：
+下方代码实现从像素坐标系到相机坐标系转换，并且标注中心点以及三维坐标信息。
+```python
+for i in range(len(xyxy_list)):
+    ux = int((xyxy_list[i][0]+xyxy_list[i][2])/2)  # 计算像素坐标系的x
+    uy = int((xyxy_list[i][1]+xyxy_list[i][3])/2)  # 计算像素坐标系的y
+    dis = aligned_depth_frame.get_distance(ux, uy)  
+    camera_xyz = rs.rs2_deproject_pixel_to_point(
+    depth_intrin, (ux, uy), dis)  # 计算相机坐标系xyz
+    camera_xyz = np.round(np.array(camera_xyz), 3)  # 转成3位小数
+    camera_xyz = camera_xyz.tolist()
+    cv2.circle(canvas, (ux,uy), 4, (255, 255, 255), 5)#标出中心点
+    cv2.putText(canvas, str(camera_xyz), (ux+20, uy+10), 0, 1,
+                                [225, 255, 255], thickness=2, lineType=cv2.LINE_AA)#标出坐标
+    camera_xyz_list.append(camera_xyz)
+    #print(camera_xyz_list)
+```
+# 6.Reference:
 
 [https://github.com/ultralytics/yolov5]()
 
